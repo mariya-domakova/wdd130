@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+
+@font-face  {
+  font-family: "Zuume Rough Bold";
+  src: url('../fonts/ZuumeRough-Bold.ttf');
+  
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 body {
     background-color: #fefae0;
+    font-family: "Archivo Narrow", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #0a2b36;
@@ -11,17 +22,26 @@ header {
 .logo {
     width: 80px;
 }
+#logo_link {
+    padding-top: 5px;
+}   
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 nav a {
     text-align: center;
     color: #fefae0;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #ab6136;
     color: white;
+}
+.home-title {
+    font-family: "Zuume Rough Bold", Arial, sans-serif;
+    font-size: 2.5em;
 }
 #hero-msg h1 {
     text-align: center;
@@ -34,6 +54,10 @@ nav a:hover {
 }
 .home-title {
     color: #0a2b36;
+    margin-top: 10px;
+}
+h2 {
+    margin: 0;
 }
 h4 {
     color: #0a2b36;
@@ -44,40 +68,52 @@ h4 {
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 #background {
     height: 725px;
     background-color: #81adb1;
 }
-.book {
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0; 
+}  
+.card-img {
+    border: 10px solid #0a2b36;
+}
+.book, .join {
     background-color: #81adb1;
     color: #0a2b36;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
-.book:hover {
-    background-color: #ab6136;
-    color: #fefae0;
-}
-.join {
-    background-color: #81adb1;
-    color: #0a2b36;
-    text-decoration: none;
-}
-.join:hover {
+.book:hover, .join:hover {
     background-color: #ab6136;
     color: #fefae0;
 }
 .msg {
     background-color: #0a2b36;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: #fefae0;
+    font-family: "Zuume Rough Bold", Arial, sans-serif;
+    font-size: 2em;
 }
 .msg p {
     color: #fefae0;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: #0a2b36;
     color: #81adb1;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color: #fefae0;
@@ -92,3 +128,6 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }
+footer .social img {
+    padding-top: 15px;
+}  
