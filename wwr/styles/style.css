@@ -16,7 +16,7 @@ body {
     padding: 0;
 }
 header {
-    background-color: rgba(10, 43, 54, 0.4);
+    background-color: rgba(10, 43, 54, 0.6);
     display: grid;
     grid-template-columns: 150px auto;
 }
