@@ -197,7 +197,7 @@ footer .social img {
 #subpage-msg {
     color: #0a2b36;
     font-family: "Zuume Rough Bold", Arial, sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
     grid-column: 2/3;
     grid-row: 2/3;
@@ -243,10 +243,21 @@ span {
     grid-column: 2/3;
     grid-row: 1/2;
 }
-#subpage-button {
+.trip-info {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.trip-title {
+    grid-row: 1/2;
+}
+.dates {
+    grid-row: 2/3;
+}
+.subpage-button {
+    grid-row: 3/4;
     margin-bottom: 0;
 }
-#note{
+#note {
     font-size: 15px;
     color: gray;
     padding: 0;
