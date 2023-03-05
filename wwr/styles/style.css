@@ -255,12 +255,10 @@ span {
 }
 .subpage-button {
     grid-row: 3/4;
-    margin-bottom: 0;
 }
 #note {
     font-size: 15px;
     color: gray;
-    padding: 0;
     margin-top: 50px;
 }
 
