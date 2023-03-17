@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@800&family=Roboto:wght@300;400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+body {
+    background-color: white;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #141414;
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+.logo {
+    width: 270px;
+}
+#logo_link {
+    justify-self: center;
+    align-self: center;
+} 
+nav {
+    display: flex;
+    justify-content: space-around;
+} 
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+    position: relative;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 8px;
+    background-color: #922b2b;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  nav a:hover::after {
+    transform: scaleX(1);
+  }
+/* nav a:hover {
+    background-color: #922b2b;
+    color: white;
+} */
+.home-title {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 2.9em;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin-top: -100px; 
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 130px;
+    margin-right: 100px;
+}
+#hero-msg h1 {
+    text-align: right;
+}
+#hero-img {
+    width: 100%;
+}
+.button-box {
+    text-align: right;
+}
+h2 {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 2.2em;
+}
+h3 {
+    color: white;
+}
+.home-grid {
+    text-align: center;
+}
+#homepage-introduction {
+    padding-top: 40px;
+    padding-bottom: 90px;
+    background-image: url("../images/background.PNG");
+    background-position: center;
+    background-size: cover;
+}
+#introduction-msg {
+    font-weight: 300;
+    margin: 40px 300px 70px;
+}
+.benefits-grid {
+    padding: 30px 0 100px;
+    background-color: #dce7e6;
+}
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+#benefit {
+    padding: 40px;
+    margin: 20px;
+    width: 300px;
+    background-color: #141414;
+    color: #adadad;
+    border-radius: 15px;
+    transition: transform .3s;
+    /* box-shadow: 5px 5px 10px #922b2b; */
+}
+#benefit:hover {
+    transform: scale(1.05);
+}
+#benefit h2 {
+    color: white;
+}
+#benefit p {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+.button {
+    background-color: #141414;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 40px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.button:hover {
+    background-color: #922b2b;
+    color: white;
+}
+
+.efficient, .professional, .superhuman {
+    max-width: 384px;
+    text-align: center;
+    margin-top: 40px;
+}
+.icon {
+    width: 70px;
+}
+.quote {
+    font-weight: 300;
+    font-size: larger;
+    padding: 50px 300px 100px;
+    background-image: url("../images/background2.PNG");
+    background-position: center;
+    background-size: cover;
+}
+#quote-img {
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+#myBtn {
+    position: fixed;
+    bottom: 200px;
+    right: 40px;
+    background-color: rgba(255, 255, 255, 0.5);;
+    color: #dce7e6;
+    border: 2px solid #dce7e6;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background-color:  rgba(173, 173, 173, 0.5);;
+    color: white;
+    border: none;
+  }
+  #myBtn::before {
+    content: "\1F861"; /* Unicode character for the up arrow */
+    font-size: 24px; /* Increase arrow size */
+  }
+footer {
+    background-color: #141414;
+    color: #adadad;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #adadad;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: none;
+}
+footer .social img {
+    padding-top: 15px;
+} 
+
+

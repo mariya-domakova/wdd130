@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dronocross | Home</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.png">
 </head>
 <body>
     <div id="content">
@@ -13,7 +14,7 @@
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo.png" alt="Dronocross Logo">
             </a>
-            <nav>
+            <nav class="fill">
                 <a href="index.html">Home</a>
                 <a href="services.html">Services</a>
                 <a href="contactus.html">Contact Us</a>
@@ -25,51 +26,58 @@
             </div>
             <section id="hero-msg">
                 <h1 class="home-title">WE BRING TECHNOLOGY CLOSER TO PEOPLE</h1>
-                <a class="learnmore" href="#">Learn more</a>
+                <div class='button-box'>
+                    <a class="button" id="learnmore" href="#homepage-introduction">Learn more</a>
+                </div>
             </section>
         </div>
         <main class="home-grid">
-            <section class="homepage-introduction">
+            <section id="homepage-introduction">
                 <h2>Welcome to our Dronocross website</h2>
-                <p>We are a drone cervices company based in Ireland. Our purpose is 
+                <p id="introduction-msg">We are a drone services company based in Ireland. Our purpose is 
                     to bring technology closer to people to make their lives easier and happier. 
                     We focus on providing search and rescue services by using our highly 
                     equipped drones. Along with that, we help in wind turbine inspections 
                     and make spectacular photos and videos for various occasions.</p>
-                <a class="explore" href="services.html">Explore services</a>
+                <a class="button" id="explore" href="services.html">Explore services</a>
             </section>
-            <section class="benefits">
+            <section class="benefits-grid">
                 <h2>Why get our help</h2>
-                <section class="efficient">
-                    <img class="card-img" src="images/efficient.png" alt="clock">
-                    <h3>Efficient</h3>
-                    <p>Save time and life of your loved ones by using our drones to provide real-time 
-                        information on the location of missing persons in a quick and safe methods.</p>
+                <section class="benefits">
+                    <section id="benefit">
+                        <img class="icon" src="images/efficient.png" alt="clock">
+                        <h3>Efficient</h3>
+                        <p>Save time and life of your loved ones by using our drones to provide real-time 
+                            information on the location of missing persons in a quick and safe methods. 
+                            Meanwhile, you can also support their life by delivering emergency medicine 
+                            or equipment (torch, life vest) to hard-to-reach areas.</p>
+                    </section>
+                    <section id="benefit">
+                        <img class="icon" src="images/professional.png" alt="quality mark">
+                        <h3>Professional</h3>
+                        <p>Our skilled pilots are highly trained and skilled in flying drones in challenging 
+                            environments and under difficult conditions such as complex terrain, mountainous 
+                            regions or dense forests. Excellent communication skills and ability to work 
+                            effectively under pressure allows them to make decisions that can have a significant 
+                            impact on the success of the mission.</p>
+                    </section>
+                    <section id="benefit">
+                        <img class="icon" src="images/superhuman.png" alt="clock">
+                        <h3>Superhuman</h3>
+                        <p>Our drones equipped with thermal cameras and infrared sensors detecting heat 
+                            signatures difficult to spot with the naked eye from a distance, which helps 
+                            rescue missing persons quicker and drastically increases the chances of their rescueing.</p>
+                    </section>
                 </section>
-                <section class="professional">
-                    <img class="card-img" src="images/professional.png" alt="quality mark">
-                    <h3>Professional</h3>
-                    <p>Our skilled pilots are highly trained and skilled in flying drones in challenging 
-                        environments and under difficult conditions such as complex terrain, mountainous 
-                        regions or dense forests. Excellent communication skills and ability to work 
-                        effectively under pressure allows them to make decisions that can have a significant 
-                        impact on the success of the mission.</p>
-                </section>
-                <section class="superhuman">
-                    <img class="card-img" src="images/superhuman.png" alt="clock">
-                    <h3>Superhuman</h3>
-                    <p>Our drones equipped with thermal cameras and infrared sensors detecting heat 
-                        signatures difficult to spot with the naked eye from a distance, which helps 
-                        rescue missing persons quicker and drastically increases the chances of their rescueing.</p>
-                </section>
+                <a class="button" id="ask" href="contactus.html">Ask question</a>
             </section>
             <section class="quote">
-                <p>"Drones overall will be more impactful than I think people recognize, in positive ways to help society." 
-                <br>
-                Bill Gates</p>
+                <p>"Drones overall will be more impactful than I think people recognize, in positive ways to help society."</p>
+                <p id="name"> — Bill Gates</p>
                 <img id="quote-img" src="images/bill_gates.jpg" alt="Bill Gates">
             </section>
         </main>
+        <button id="myBtn" title="Go to top">Top</button>
         <footer>
             <p>Dronocross &copy; 2023 - Mariya Domakova</p>
             <p><a href="site-plan.html">Site Plan</a></p>
@@ -87,5 +95,25 @@
             </div>
         </footer>
     </div>
+    <script>
+        // Get the button
+        var myButton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            myButton.style.display = "block";
+        } else {
+            myButton.style.display = "none";
+        }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        myButton.onclick = function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        };
+    </script>
+
 </body>
 </html>
