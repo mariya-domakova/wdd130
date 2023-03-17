@@ -1,18 +1,18 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@800&family=Roboto:wght@300;400&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #141414  ;
   --secondary-color: #ffffff ;
-  --accent1-color: #922b2b;
-  --accent2-color: #adadad;
+  --accent1-color: #dce7e6;
+  --accent2-color: #922b2b;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Roboto Flex";
-  --paragraph-font: Helvetica, sans-serif;
+  --heading-font: "Roboto Flex", Arial, sans-serif;
+  --paragraph-font: "Roboto", Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #141414;  /* headlines on a white background */ 
