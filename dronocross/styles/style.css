@@ -112,13 +112,13 @@ h3 {
     padding: 30px 0 100px;
     background-color: #dce7e6;
 }
-.benefits {
+#benefits {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 50px 0;
 }
-#benefit {
+.benefit {
     padding: 40px;
     margin: 20px;
     width: 300px;
@@ -128,13 +128,13 @@ h3 {
     transition: transform .3s;
     /* box-shadow: 5px 5px 10px #922b2b; */
 }
-#benefit:hover {
+.benefit:hover {
     transform: scale(1.05);
 }
-#benefit h2 {
+.benefit h2 {
     color: white;
 }
-#benefit p {
+.benefit p {
     font-size: 0.9em;
     font-weight: 300;
 }
@@ -172,7 +172,7 @@ h3 {
     margin-top: 20px;
     border-radius: 50%;
 }
-#myBtn {
+#up-button {
     position: fixed;
     bottom: 200px;
     right: 30px;
@@ -187,12 +187,12 @@ h3 {
     cursor: pointer;
 }
   
-#myBtn:hover {
+#up-button:hover {
     background-color:  rgba(173, 173, 173, 0.5);;
     color: white;
     border: none;
 }
-#myBtn::before {
+#up-button::before {
     content: "\1F861"; /* Unicode character for the up arrow */
     font-size: 24px; /* Increase arrow size */
 }
@@ -224,35 +224,135 @@ footer .social img:hover {
     opacity: .6;
 }
 
-@media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
+@media screen and (max-width: 480px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #1c1c1c;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
     }
-    nav, footer {
-        flex-direction: column;
+    
+    .logo {
+        height: 3.5rem;
     }
+    
+    nav {
+        display: flex;
+        gap: 1rem;
+    }
+    
     nav a {
-        display: block;
-        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 0.5rem;
+        transition: color 0.3s;
+    }
+    
+    nav a:hover {
+        color: #f6b93b;
     }
     #hero {
-        margin-top: 0;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #1c1c1c;
+        color: #fff;
+    }
+    #hero-img {
+        height: 80%;
     }
     #hero-msg {
-        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
     }
     .home-title {
-        font-size: 25px;
-        color: #6f7364;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
     }
-
-    #homepage-introduction, #quote {
-        width: 80%;
+    .button-box {
+        margin-top: 2rem;
+    }
+    .button {
+        display: inline-block;
+        background-color: #f6b93b;
+        color: #1c1c1c;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    .button:hover {
+        background-color: #f5cd79;
+    }
+    .home-grid {
+        padding: 5rem;
+    }
+    #homepage-introduction {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    #homepage-introduction h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    #introduction-msg {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+    .benefits-grid {
+        margin-bottom: 5rem;
+    }
+    #benefits {
+        display: flex;
+        gap: 5rem;
+        margin-top: 2rem;
+    }
+    .benefit {
+        text-align: center;
+    }
+    .benefit .icon {
+        height: 5rem;
+        margin-bottom: 1rem;
+    }
+    .benefit h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    .benefit p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    #ask {
         display: block;
         margin: 0 auto;
+        background-color: #1c1c1c;
+        color: #fff;
+        font-size: 1.2rem;
     }
-    footer {
-        margin-top: 25px;
-    }
-
+}
