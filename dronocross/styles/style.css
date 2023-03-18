@@ -60,7 +60,7 @@ nav a::after {
 } */
 .home-title {
     font-family: "Roboto Flex", Arial, sans-serif;
-    font-size: 2.9em;
+    font-size: 2.8em;
 }
 #hero {
     display: grid;
@@ -151,7 +151,6 @@ h3 {
     background-color: #922b2b;
     color: white;
 }
-
 .efficient, .professional, .superhuman {
     max-width: 384px;
     text-align: center;
@@ -160,7 +159,7 @@ h3 {
 .icon {
     width: 70px;
 }
-.quote {
+#quote {
     font-weight: 300;
     font-size: larger;
     padding: 50px 300px 100px;
@@ -176,7 +175,7 @@ h3 {
 #myBtn {
     position: fixed;
     bottom: 200px;
-    right: 40px;
+    right: 30px;
     background-color: rgba(255, 255, 255, 0.5);;
     color: #dce7e6;
     border: 2px solid #dce7e6;
@@ -186,17 +185,17 @@ h3 {
     text-align: center;
     line-height: 60px;
     cursor: pointer;
-  }
+}
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color:  rgba(173, 173, 173, 0.5);;
     color: white;
     border: none;
-  }
-  #myBtn::before {
+}
+#myBtn::before {
     content: "\1F861"; /* Unicode character for the up arrow */
     font-size: 24px; /* Increase arrow size */
-  }
+}
 footer {
     background-color: #141414;
     color: #adadad;
@@ -221,5 +220,39 @@ footer p a:hover {
 footer .social img {
     padding-top: 15px;
 } 
+footer .social img:hover {
+    opacity: .6;
+}
 
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+
+    #homepage-introduction, #quote {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 
