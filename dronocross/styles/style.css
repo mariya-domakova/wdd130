@@ -193,19 +193,21 @@ h3 {
 #up-button {
     display: none;
     position: fixed;
-    bottom: 200px;
+    bottom: 202px;
     right: 30px;
-    background-color: rgba(255, 255, 255, 0.5);;
-    color: #dce7e6;
+    z-index: 99;
+    font-size: 24px;
     border: 2px solid #dce7e6;
     border-radius: 50%;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #dce7e6;
     width: 60px;
     height: 60px;
-    font-size: 24px; 
     cursor: pointer;
 }
 #up-button:hover {
-    background-color:  rgba(173, 173, 173, 0.5);;
+    background-color:  rgba(173, 173, 173, 0.5);
     color: white;
     border: none;
 }
