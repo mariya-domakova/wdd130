@@ -26,7 +26,7 @@ header {
 #logo_link {
     justify-self: center;
     align-self: center;
-} 
+}
 nav {
     display: flex;
     justify-content: space-around;
@@ -86,9 +86,7 @@ nav a:hover::after {
 h2 {
     font-family: "Roboto Flex", Arial, sans-serif;
     font-size: 2.2em;
-}
-h3 {
-    color: white;
+    margin: 35px auto;
 }
 .home-grid {
     text-align: center;
@@ -100,8 +98,10 @@ h3 {
     background-position: center;
     background-size: cover;
 }
-#introduction-msg {
+p {
     font-weight: 300;
+}
+#introduction-msg {
     margin: 40px 300px 70px;
 }
 .benefits-grid {
@@ -126,12 +126,11 @@ h3 {
 .benefit:hover {
     transform: scale(1.05);
 }
-.benefit h2 {
+.benefit h3 {
     color: white;
 }
 .benefit p {
     font-size: 0.9em;
-    font-weight: 300;
 }
 .button {
     text-decoration: none;
@@ -178,7 +177,6 @@ h3 {
     width: 70px;
 }
 #quote {
-    font-weight: 300;
     font-size: larger;
     padding: 50px 300px 100px;
     background-image: url("../images/background2.PNG");
@@ -231,6 +229,7 @@ footer a:hover {
 }
 footer p {
     font-size: 1.2em;
+    font-weight: 400;
 }
 footer p a:hover {
     text-decoration: none;
@@ -241,3 +240,39 @@ footer .social img {
 footer .social img:hover {
     opacity: .6;
 }
+
+/* Services subpage */
+
+.subpage-introduction {
+    text-align: center;
+}
+.services {
+    margin: 50px;
+}
+.service {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-bottom: 30px;
+    background-color: #dce7e6;
+}
+.service-img {
+    width: 600px;
+    height: 100%;
+}
+.service-content {
+    display: flex;
+    flex-direction: column;
+}
+.services h3 {
+    margin: 10px 30px;
+    margin-bottom: 15px;
+}
+.services p {
+    font-size: 0.75em;
+    margin: 0 30px;
+}
+.services a {
+    margin-left: 30px;
+}
+
