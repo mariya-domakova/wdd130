@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dronocross | Contact Us</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.png">
 </head>
 <body>
-    <div id="content">
+    <div id="contactus-content">
         <header>
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo.png" alt="Dronocross Logo">
@@ -19,64 +20,53 @@
                 <a href="contactus.html">Contact Us</a>
             </nav>
         </header>
+        <div class="subpage-introduction">
+            <h2>Contact us</h2>
+            <p>Please fill out the form and we'll contact you as soon as possible.</p>
+        </div>
         <main class="contactus-grid">
-            <section class="subpage-introduction">
-                <h2>Contact us</h2>
-                <p>Please fill out the form and we'll contact you as soon as possible.</p>
-            </section>
             <form action="/my-handling-form-page" method="post">
-                <ul>
-                    <li>
-                        <label for="fname">First name:</label>
-                        <input type="text" id="fname" name="first_name" />
-                    </li>
-                    <li>
-                        <label for="lname">Last name:</label>
-                        <input type="text" id="lname" name="last_name" />
-                    </li>
-                    <li>
-                        <label for="phone">Phone number:</label>
-                        <input type="text" id="phone" name="phone" />
-                    </li>
-                    <li>
-                        <label for="mail">E-mail:</label>
-                        <input type="email" id="mail" name="user_email" />
-                    </li>
-                    <li>
-                        <p><label for="service">Service you are interested in:</label>
-                            <select id="serivce">
-                            <option label=" "></option>
-                            <option>Search and rescue</option>
-                            <option>Wind turbine maintenance</option>
-                            <option>Filmmaking and photography</option>
-                        </select></p>                      
-                    </li>
-                    <li>
-                        <label for="inquiry">Please describe your inquiry:</label>
-                        <textarea id="inquiry" name="inquiry"></textarea>
-                    </li>
-                    <li class="button">
-                        <button type="submit">Submit</button>
-                    </li>
-                </ul>
-              </form>
-              <section id="contact-info">
-                <section class="location">
-                    <img class="icon" src="images/free-icon-font-marker-3916880.png" alt="Marker">
+                <!-- <label for="fname">First Name:</label> -->
+                <input type="text" id="fname" name="firstname" placeholder="First Name">
+            
+                <!-- <label for="lname">Last name:</label> -->
+                <input type="text" id="lname" name="lastname" placeholder="Last name">
+            
+                <!-- <label for="phone">Phone number:</label> -->
+                <input type="text" id="phone" name="phone" placeholder="Phone number">
+            
+                <!-- <label for="mail">E-mail:</label> -->
+                <input type="email" id="mail" name="user_email" placeholder="E-mail"/>
+            
+                <!-- <label for="service">Service you are interested in:</label> -->
+                <select id="serivce" name="service">
+                    <option value="search-and-rescue">Search and rescue</option>
+                    <option value="wind-turbine-maintenance">Wind turbine maintenance</option>
+                    <option value="filmmaking-and-photography">Filmmaking and photography</option>
+                </select>                   
+            
+                <!-- <label for="inquiry">Please describe your inquiry:</label> -->
+                <textarea id="inquiry" name="inquiry" placeholder="Please describe your inquiry"></textarea>
+            
+                <button type="submit">Submit</button>
+            </form>
+            <div id="contact-info">
+                <section class="info">
+                    <img class="small-icon" src="images/free-icon-font-marker-3916880.png" alt="Marker">
                     <p>Main Office Location: Letterkenny, Ireland</p>
                 </section>
-                <section class="phone">
-                    <img class="icon" src="images/free-icon-font-phone-call-5070407.png" alt="Phone">
+                <section class="info">
+                    <img class="small-icon" src="images/free-icon-font-phone-call-5070407.png" alt="Phone">
                     <p>Phone: +353xx-xxx-xxxx</p>
                 </section>
-                <section class="email">
-                    <img class="icon" src="images/free-icon-font-envelope-3916611.png" alt="Envelope">
+                <section class="info">
+                    <img class="small-icon" src="images/free-icon-font-envelope-3916611.png" alt="Envelope">
                     <p>E-mail: info@dronocross.ie</p>
                 </section>
-              </section>
+            </div>
         </main>
         <footer>
-            <p>Twin Peaks Rafting Adventures &copy; 2023 - Mariya Domakova</p>
+            <p>Dronocross &copy; 2023 - Mariya Domakova</p>
             <p><a href="site-plan-rafting.html">Site Plan</a></p>
             <p><a href="contactus.html">Contact Us</a></p>
             <div class="social">

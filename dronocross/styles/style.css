@@ -132,7 +132,7 @@ p {
 .benefit p {
     font-size: 0.9em;
 }
-.button {
+.button, button {
     text-decoration: none;
     display: inline-block;
     width: 200px;
@@ -245,17 +245,29 @@ footer .social img:hover {
 
 /* Services subpage */
 
+#services-content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: rgb(255,255,255);
+    background: linear-gradient(351deg, rgba(255,255,255,1) 79%, rgba(191,204,204,1) 89%, rgba(210,191,191,1) 100%);
+}
 .subpage-introduction {
     text-align: center;
+    margin: 70px auto;
+}
+.subpage-introduction h2 {
+    margin-bottom: 15px;
 }
 .services {
-    margin: 50px 70px;
+    margin: 50px 70px 130px;
 }
 .service {
     display: flex;
     flex-direction: row;
     align-items: left;
     margin-bottom: 40px;
+    background-color: #dce7e6;
+    border: 1px solid #ccc;
 }
 .service-img {
     width: 600px;
@@ -264,7 +276,6 @@ footer .social img:hover {
 .service-content {
     display: flex;
     flex-direction: column;
-    background-color: #dce7e6;
     position: relative;
 }
 .services h3 {
