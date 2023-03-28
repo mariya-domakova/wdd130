@@ -135,8 +135,10 @@ p {
 .button {
     text-decoration: none;
     display: inline-block;
-    padding: 17px 40px;
-    margin-top: -15px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center; 
     border-radius: 8px;
     position: relative;
     overflow: hidden;
@@ -247,14 +249,13 @@ footer .social img:hover {
     text-align: center;
 }
 .services {
-    margin: 50px;
+    margin: 50px 70px;
 }
 .service {
     display: flex;
     flex-direction: row;
     align-items: left;
-    margin-bottom: 30px;
-    background-color: #dce7e6;
+    margin-bottom: 40px;
 }
 .service-img {
     width: 600px;
@@ -263,10 +264,11 @@ footer .social img:hover {
 .service-content {
     display: flex;
     flex-direction: column;
+    background-color: #dce7e6;
+    position: relative;
 }
 .services h3 {
-    margin: 10px 30px;
-    margin-bottom: 15px;
+    margin: 20px 30px;
 }
 .services p {
     font-size: 0.75em;
@@ -274,5 +276,10 @@ footer .social img:hover {
 }
 .services a {
     margin-left: 30px;
+    bottom: 0;
+    margin-bottom: 20px;
 }
-
+#reservenow {
+    position: absolute;
+    margin-bottom: 30px;
+}
