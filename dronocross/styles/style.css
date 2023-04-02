@@ -147,7 +147,7 @@ p {
 	font-size: 18px;
     transition: .2s ease-in-out;
 }
-.button:before {
+.button:before, button:before {
     content: "";
     background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
     height: 60px;
@@ -249,7 +249,7 @@ footer .social img:hover {
     max-width: 1600px;
     margin: 0 auto;
     background: rgb(255,255,255);
-    background: linear-gradient(351deg, rgba(255,255,255,1) 79%, rgba(191,204,204,1) 89%, rgba(210,191,191,1) 100%);
+    background: linear-gradient(351deg, rgba(255,255,255,1) 75%, rgba(191,204,204,1) 87%, rgba(210,191,191,1) 100%);
 }
 .subpage-introduction {
     text-align: center;
@@ -266,7 +266,7 @@ footer .social img:hover {
     flex-direction: row;
     align-items: left;
     margin-bottom: 40px;
-    background-color: #dce7e6;
+    background-color: rgba(220, 231, 230, 0.6);
     border: 1px solid #ccc;
 }
 .service-img {
@@ -293,4 +293,71 @@ footer .social img:hover {
 #reservenow {
     position: absolute;
     margin-bottom: 30px;
+}
+
+/* Contact Us page */
+
+#contactus-content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: rgb(255,255,255);
+    background: linear-gradient(351deg, rgba(255,255,255,1) 75%, rgba(191,204,204,1) 87%, rgba(210,191,191,1) 100%);
+    background-image: url("../images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.contactus-grid {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 210px;
+}
+form {
+    margin: 0px 100px;
+    width: 500px;
+    padding: 1.5em 2.5em;
+    /* border: 1px solid #ccc; */
+    border-radius: 0.3em;
+    background-color: rgba(20, 20, 20, 0.4);
+    font-size: 0.8em;
+}
+input, select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    font-size: 1em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+button {
+    margin: 10px auto;
+    cursor: pointer;
+    width: 100%;
+}
+#contact-info {
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+}
+.small-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
 }
