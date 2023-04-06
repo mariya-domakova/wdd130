@@ -132,7 +132,7 @@ p {
 .benefit p {
     font-size: 0.9em;
 }
-.button, button {
+.button, #submit-button {
     text-decoration: none;
     display: inline-block;
     width: 200px;
@@ -147,7 +147,7 @@ p {
 	font-size: 18px;
     transition: .2s ease-in-out;
 }
-.button:before, button:before {
+.button:before, #submit-button:before {
     content: "";
     background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
     height: 60px;
@@ -157,15 +157,15 @@ p {
     left: -80px;
     transform: skewX(-45deg);
 }
-.button:hover {
+.button:hover, #submit-button:hover {
     background: #141414;
     color: white;
 }
-.button:hover:before {
+.button:hover:before, #submit-button:hover:before {
     left: 120%;
     transition: .5s ease-in-out;
 }
-.button:focus {
+.button:focus, #submit-button:focus {
     background: #141414;
     color: white;
     outline: none;
@@ -264,10 +264,9 @@ footer .social img:hover {
 .service {
     display: flex;
     flex-direction: row;
-    align-items: left;
     margin-bottom: 40px;
-    background-color: rgba(220, 231, 230, 0.6);
     border: 1px solid #ccc;
+    background-color: #dce7e6;
 }
 .service-img {
     width: 600px;
@@ -290,7 +289,9 @@ footer .social img:hover {
     bottom: 0;
     margin-bottom: 20px;
 }
-#reservenow {
+#reservenow1,
+#reservenow2, 
+#reservenow3  {
     position: absolute;
     margin-bottom: 30px;
 }
@@ -302,8 +303,8 @@ footer .social img:hover {
     margin: 0 auto;
     background: rgb(255,255,255);
     background: linear-gradient(351deg, rgba(255,255,255,1) 75%, rgba(191,204,204,1) 87%, rgba(210,191,191,1) 100%);
-    background-image: url("../images/hero.jpg");
-    background-position: center;
+    background-image: url("../images/hero2.jpg");
+    background-position: left;
     background-size: cover;
 }
 .contactus-grid {
@@ -317,7 +318,7 @@ form {
     padding: 1.5em 2.5em;
     /* border: 1px solid #ccc; */
     border-radius: 0.3em;
-    background-color: rgba(20, 20, 20, 0.4);
+    background-color: rgba(20, 20, 20, 0.25);
     font-size: 0.8em;
 }
 input, select {
@@ -343,7 +344,7 @@ textarea {
     background-color: #f8f8f8;
     resize: none;
 }
-button {
+#submit-button {
     margin: 10px auto;
     cursor: pointer;
     width: 100%;
@@ -355,6 +356,11 @@ button {
 .info {
     display: flex;
     flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.info p {
+    margin-top: 3px;
 }
 .small-icon {
     width: 30px;
